@@ -29,7 +29,7 @@ const PAT = 'b7261ceb2acb49dabc1d6a13b0322134';
 const APP_ID = 'my-first-application';
 const MODEL_ID = 'general-image-recognition';
 const MODEL_VERSION_ID = '';
-const IMAGE_FILE_LOCATION = 'C:/Users/biswa/Downloads/imgg.jpg';
+//const IMAGE_FILE_LOCATION = 'C:/Users/biswa/Downloads/imgg.jpg';
 
 
 
@@ -39,8 +39,8 @@ const metadata = new grpc.Metadata();
 metadata.set("authorization", "Key " + PAT);
 
 const fs = require("fs");
-const imageBytes = fs.readFileSync(IMAGE_FILE_LOCATION);
-console.log(imageBytes);
+//const imageBytes = fs.readFileSync(IMAGE_FILE_LOCATION);
+console.log(buffer);
 stub.PostModelOutputs(
     {
         user_app_id: {
